@@ -13,7 +13,7 @@
 
 .top-navs{
   position: relative;
-  bottom: 30%;
+  bottom: 10%;
 }
 
 ul.nav{
@@ -26,22 +26,33 @@ ul.nav{
 .headline-image{
   width: 100%;
   height: 300px;
+  padding-top: 10px;
 }
 
 .midsection-image{
   width: 100%;
   height: 100%;
+  padding: 10px 0px;
 }
 
 .signup-forms{
   width: 100%;
   height: 100%;
   border: 2px solid Black;
-  padding: 20px;
+  padding: 10px 10px;
+  outline-offset: -20px;
+  box-sizing: border-box;
+}
+
+.signup-buttons{
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 70px;
 }
 
 .midsection{
-  height: 700px;
+  // height: 700px;
+  height: auto;
 }
 
 .section-header{
@@ -61,8 +72,21 @@ ul.nav{
   box-sizing: border-box;
 }
 
-.signup-buttons{
-  text-align: center;
-  margin-right: 40px;
-  margin-left: 70px;
+.no-bullets{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.user-button-list {
+  li{
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 15px;
+    border: 1px solid Black;
+    color: black;
+  }
 }
