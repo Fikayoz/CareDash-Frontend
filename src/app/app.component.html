@@ -1,21 +1,257 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="body-div">
+<!--Top-->
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+  <a href="caredash.com">
+    <img src="https://assets.caredash.com/assets/caredash-logo-official-a122691e52b2f17c2083929963e1f288de8bf447e9de424017dc35f32b11d5fb.svg"
+    class="logo">
+  </a>
+  </div>
+  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+    <nav class="top-navs">
+        <ul class="nav">
+
+            <li class="nav-item" dropdown>
+                <button
+                class="btn btn-secondary dropdown-toggle"
+                dropdownToggle type="button"
+                id="drop-menu1"
+                data-toggle="dropdown">Menu Item 1</button>
+                <div
+                  class="dropdown-menu"
+                  id="drop-menu1"
+                  *dropdownMenu
+                  aria-labelledby="drop-menu1"
+                  role="menu">
+                  <a class="dropdown-item" href="#">Dropdown First One</a>
+                  <a class="dropdown-item" href="#">Dropdown First Two</a>
+                  <a class="dropdown-item" href="#">Dropdown First Three</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item" dropdown>
+                <button
+                class="btn btn-secondary dropdown-toggle"
+                id="drop-menu2"
+                dropdownToggle
+                type="button"
+                data-toggle="dropdown">Menu Item 2</button>
+                <div
+                  class="dropdown-menu"
+                  id="drop-menu2"
+                  *dropdownMenu
+                  aria-labelledby="drop-menu2"
+                  role="menu">
+                  <a class="dropdown-item" href="#">Dropdown Second One</a>
+                  <a class="dropdown-item" href="#">Dropdown Second Two</a>
+                  <a class="dropdown-item" href="#">Dropdown Second Three</a>
+                </div>
+            </li>
+
+
+            <li class="nav-item" dropdown>
+                <button
+                class="btn btn-secondary dropdown-toggle"
+                dropdownToggle type="button"
+                id="drop-menu3"
+                data-toggle="dropdown">Menu Item 3</button>
+                <div
+                  class="dropdown-menu"
+                  id="drop-menu3"
+                  *dropdownMenu
+                  aria-labelledby="drop-menu3"
+                  role="menu">
+                  <a class="dropdown-item" href="#">Dropdown Third One</a>
+                  <a class="dropdown-item" href="#">Dropdown Third Two</a>
+                  <a class="dropdown-item" href="#">Dropdown Third Three</a>
+                </div>
+            </li>
+
+
+        </ul>
+    </nav>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+<!--====================================================================================================-->
+<!-- Mid -->
+
+<div class="midsection">
+  <div class="row">
+    <div class="col-lg-7 col-md-7">
+      <img src="https://st3.depositphotos.com/9999814/18280/i/1600/depositphotos_182800376-stock-photo-doctor-on-medical-icons-background.jpg"
+      class="midsection-image">
+    </div>
+
+    <div class="col-lg-4 col-md-4 signup-forms">
+      <h4 class="section-header">Sign Up with CareDash to Edit your Provider Profile</h4>
+
+      <form>
+          <div class="form-group">
+            <label for="InputFirstName">First Name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="InputFirstName"
+            placeholder="Enter First Name">
+          </div>
+
+          <div class="form-group">
+            <label for="InputLastName">Last Name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="InputLastName"
+            placeholder="Enter Last Name">
+          </div>
+
+          <div class="form-group">
+            <label for="InputEmail">Email address</label>
+            <input
+            type="email"
+            class="form-control"
+            id="InputEmail"
+            placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">You're email's safe with us!</small>
+          </div>
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input
+            type="password"
+            class="form-control"
+            id="Password"
+            placeholder="Enter Password">
+          </div>
+
+          <div class="form-group">
+            <label for="PasswordConfirm">Confirm Password</label>
+            <input
+            type="password"
+            class="form-control"
+            id="PasswordConfirm"
+            placeholder="Confirm Password">
+          </div>
+          <button type="submit" class="btn btn-primary signup-buttons text-center">Sign Up</button>
+          <button type="submit" class="btn btn-primary signup-buttons text-center">Log In</button>
+        </form>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="row center-text">
+  <h2 class="section-header">Reasons to Sign Up as a provider on CareDash </h2>
+</div>
+
+<!--====================================================================================================-->
+<!-- Headlines -->
+<div class="row">
+  <div class="col-lg-1 col-md-1">
+  </div>
+
+  <div class="col-lg-3 col-md-3">
+    <img src="https://media.istockphoto.com/photos/technology-innovation-and-medicine-concept-doctor-and-medical-network-picture-id914789708?k=6&m=914789708&s=612x612&w=0&h=PNhm1VPwC4XvCAXW6N0AAqOaVgdO55aC4DCJK7EckG8="
+    class="headline-image">
+    <h2 class="section-header">Headline</h2>
+    <span>{{lorem}}</span>
+    <a class="btn-secondary" href="#"> Learn More </a>
+  </div>
+
+  <div class="col-lg-3 col-md-3">
+      <img src="https://media.istockphoto.com/photos/technology-innovation-and-medicine-concept-doctor-and-medical-network-picture-id914789708?k=6&m=914789708&s=612x612&w=0&h=PNhm1VPwC4XvCAXW6N0AAqOaVgdO55aC4DCJK7EckG8="
+      class="headline-image">
+      <h2 class="section-header">Headline</h2>
+      <span>{{lorem}}</span>
+      <a class="btn-secondary" href="#"> Learn More </a>
+  </div>
+
+  <div class="col-lg-3 col-md-3">
+      <img src="https://media.istockphoto.com/photos/technology-innovation-and-medicine-concept-doctor-and-medical-network-picture-id914789708?k=6&m=914789708&s=612x612&w=0&h=PNhm1VPwC4XvCAXW6N0AAqOaVgdO55aC4DCJK7EckG8="
+      class="headline-image">
+      <h2 class="section-header">Headline</h2>
+      <span>{{lorem}}</span>
+      <a class="btn-secondary" href="#"> Learn More </a>
+  </div>
+
+  <div class="col-lg-1 col-md-1">
+  </div>
+</div>
+
+<!--====================================================================================================-->
+<!-- footer -->
+
+<div class="row footer-border"></div>
+
+  <div class="col-lg-6 col-md-6">
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <h4>CareDash</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Write a Review</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <h4>Specialists</h4>
+        <ul>
+          <li><a href="#">Primary Care Physicians</a></li>
+          <li><a href="#">Pediatricians</a></li>
+          <li><a href="#">Optometrists</a></li>
+          <li><a href="#">Dentists</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">F</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#"> I</a></li>
+          <li><a href="#">P</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-12 col-sm-6 mb-3">
+    <p>Default behavior: dropdown closes after outside click or pressing ESC</p>
+    <div class="btn-group" dropdown>
+      <button id="button-autoclose1" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-autoclose1">
+        Button dropdown <span class="caret"></span>
+      </button>
+      <ul id="dropdown-autoclose1" *dropdownMenu class="dropdown-menu"
+          role="menu" aria-labelledby="button-autoclose1">
+        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-12 col-12 col-sm-6 mb-3">
+    <p>This dropdown won't be closed after outside click or pressing ESC</p>
+    <div class="btn-group" dropdown [autoClose]="false">
+      <button id="button-autoclose2" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+              aria-controls="dropdown-autoclose2">
+        Button dropdown <span class="caret"></span>
+      </button>
+      <ul id="dropdown-autoclose2" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-autoclose2">
+        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <router-outlet></router-outlet>
