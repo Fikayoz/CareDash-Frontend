@@ -2,26 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
-## Development server
+## Prerequisite
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+NOTE: If you want to run the project from source using Angular's development server, you will need to install the following:
 
-## Code scaffolding
+1. Install [Node](https://nodejs.org/en/).
+2. Install Angular CLI (Run `npm install -g @angular/cli`).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running the project
 
-## Build
+1. Navigate to the `dist/CareDash` folder
+2. Launch `index.html`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running the project (from source with Angular's development server)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Run `npm start` or `ng serve` for a dev server.
+2. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
