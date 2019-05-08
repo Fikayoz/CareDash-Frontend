@@ -8,6 +8,7 @@ NOTE: If you want to run the project from source using Angular's development ser
 
 1. Install [Node](https://nodejs.org/en/).
 2. Install Angular CLI (Run `npm install -g @angular/cli`).
+3. From the project root, run `npm i` to install dependencies.
 
 ## Running the project
 
